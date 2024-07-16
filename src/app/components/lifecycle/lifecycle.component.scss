@@ -1,0 +1,31 @@
+// Define common styles for buttons
+$button-bg-color: #b9afe9; 
+$button-text-color: #000000;
+$button-hover-color: #b6ace4;
+
+button {
+  margin: 10px; 
+  
+  a {
+    display: block;
+    padding: 10px 20px; 
+    text-decoration: none;
+    color: $button-text-color;
+    background-color: $button-bg-color;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    
+    &:hover {
+      background-color: $button-hover-color;
+      border-color: $button-hover-color;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  button {
+    width: 100%; 
+  }
+}

@@ -1,0 +1,24 @@
+<h1>login here</h1>
+<table>
+    <tr>
+        <td>User Id</td>
+        <td>
+            <input type="text" #txtuserid>
+        </td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td>
+            <input type="text" #txtuserpassword>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="login(txtuserid.value, txtuserpassword.value)">login</button>
+        </td>
+        <td>
+            <button>Cancle</button>
+        </td>
+        
+    </tr>
+</table>
