@@ -1,0 +1,18 @@
+<h1>Change detection Technique</h1>
+<app-optimize-child [name]="'John Doe'" [present]="true" #studentComponent></app-optimize-child>
+<!-- <button (click)="notify()">Toggle Presence</button> -->
+
+
+<!---Use Pure Pipe -->
+<!-- <h2>Pure Pipe </h2>
+<p>{{ message }}</p>
+<p>After pure pipe</p>
+<p>{{ message | purePipeCode}}</p> -->
+
+
+<!---Use Async Pipe-->
+<h3>Messages:</h3>
+
+<ul>
+  <li *ngFor="let mes of mes$ | async">{{ mes}}</li>
+</ul>

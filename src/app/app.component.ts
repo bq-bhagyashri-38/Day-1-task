@@ -4,11 +4,12 @@ import { NgOnChangeComponent } from './components/lifecyclehooks/ng-on-change/ng
 import { LifecycleComponent } from "./components/lifecycle/lifecycle.component";
 import { RoutingComponent } from "./task-2-routing/routing/routing.component";
 import { RoutingGuardComponent } from "./routingGuard/routing-guard/routing-guard.component";
+import { HomeoptiComponent } from "./optimization/homeopti/homeopti.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgOnChangeComponent, LifecycleComponent, RoutingComponent, RoutingGuardComponent],
+  imports: [RouterOutlet, NgOnChangeComponent, LifecycleComponent, RoutingComponent, RoutingGuardComponent, HomeoptiComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
